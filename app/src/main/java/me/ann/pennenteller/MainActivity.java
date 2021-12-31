@@ -3,7 +3,6 @@ package me.ann.pennenteller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tellerText = findViewById(R.id.tellerText);
-        Button tellerAdd = findViewById(R.id.tellerAdd);
-        Button tellerSubtract = findViewById(R.id.tellerSubtract);
+        TextView tellerText = findViewById(R.id.teller_text);
+        Button tellerAdd = findViewById(R.id.teller_add);
+        Button tellerSubtract = findViewById(R.id.teller_subtract);
 
         tellerAdd.setOnClickListener(view -> {
             teller++;
